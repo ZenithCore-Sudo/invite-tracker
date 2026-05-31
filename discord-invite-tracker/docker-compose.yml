@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  discord-bot:
+    build: .
+    container_name: discord-invite-tracker
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - CHANNEL_ID=${CHANNEL_ID}
+    restart: unless-stopped
