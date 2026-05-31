@@ -1,0 +1,62 @@
+# Environment files
+.env
+.env.local
+.env.production
+
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+LICENSE
+CHANGELOG.md
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Docker files (prevent recursive copying)
+.dockerignore
+docker-compose.yml
+docker-compose.override.yml
+
+# Testing
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Bot specific
+bot_token.txt
+config.json
+*.db
+*.sqlite
