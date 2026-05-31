@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: discord-invite-tracker
+    runtime: image
+    repo: https://github.com/YOUR_USERNAME/discord-invite-tracker
+    branch: main
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHANNEL_ID
+        sync: false
+      - key: PORT
+        value: 10000
